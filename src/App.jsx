@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import PageStyle from './components/PageStyle';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <h1>Bienvenue à tous sauf Laurie. 🤘</h1>
+      <PageStyle />
     </div>
   )
 }
