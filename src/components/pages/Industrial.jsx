@@ -1,35 +1,36 @@
-import styled from 'styled-components';
-import Scandinave from '../ressources/style-scandinave.png';
-import Industriel from '../ressources/style-industriel.jpg';
-import Baroque from '../ressources/style-baroque.jpg';
-import Zen from '../ressources/style-zen.jpg';
-import Vintage from '../ressources/style-vintage.jpg';
+import styled from "styled-components";
 
-const PageStyle = () => {
+import Kitchen from "../interactiveImg/industrial/Kitchen";
+import Bathroom from "../interactiveImg/industrial/Bathroom";
+import Bedroom from "../interactiveImg/industrial/Bedroom";
+import Garden from "../interactiveImg/industrial/Garden";
+import LivingRoom from "../interactiveImg/industrial/LivingRoom";
+
+const PageRoomIndustrial = () => {
     return (
         <MainContainer>
-            <Title>Choisissez le style qui correspond à votre projet</Title>
+            <Title>Choisissez la pièce de votre projet</Title>
             <CardStyle>
-                <Image src={Scandinave} width="90%" />
-                <StyleName>Style Scandinave</StyleName>
+                <LivingRoom />
+                <StyleName>Salle à manger</StyleName>
             </CardStyle>
             <CardStyle>
-                <Image src={Industriel} width="90%" />
-                <StyleName>Style Industriel</StyleName>
+                <Kitchen />
+                <StyleName>Cuisine</StyleName>
             </CardStyle>
             <CardStyle>
-                <Image src={Baroque} width="90%" />
-                <StyleName>Style Baroque</StyleName>
+                <Bathroom />
+                <StyleName>Salle de bain</StyleName>
             </CardStyle>
             <CardStyle>
-                <Image src={Zen} width="90%" />
-                <StyleName>Style Zen</StyleName>
+                <Bedroom />
+                <StyleName>Chambre</StyleName>
             </CardStyle>
             <CardStyle>
-                <Image src={Vintage} width="90%" />
-                <StyleName>Style Vintage</StyleName>
+                <Garden />
+                <StyleName>Jardin</StyleName>
             </CardStyle>
-        </MainContainer>
+        </ MainContainer>
     );
 };
 
@@ -78,7 +79,6 @@ const StyleName = styled.p`
 
 @media (max-width: 768px){
 }
-
 `;
 
-export default PageStyle;
+export default PageRoomIndustrial;

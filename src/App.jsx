@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import PageStyle from './components/PageStyle';
-import PageRoomScandinave from './components/PageRoomScandinave';
-import PageRoomIndustrial from './components/PageRoomIndustrial';
+import PageStyle from './components/pages/Style';
+import PageRoomScandinave from './components/pages/Scandinave';
+import PageRoomIndustrial from './components/pages/Industrial';
 import Navigation from './components/Navigation';
 
 function App() {
