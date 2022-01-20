@@ -1,5 +1,5 @@
 import shelf from "../../ressources/shelf-indus.jpg";
-import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle } from "./styledDiv";
+import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle, AddToBasket } from "./styledDiv";
 
 const Shelf = () => {
   return (
@@ -9,6 +9,7 @@ const Shelf = () => {
         <DivTitle> Etagère style industriel</DivTitle>
         Avis
         <PriceTitle>69€90</PriceTitle>
+        <AddToBasket>Ajouter au panier</AddToBasket>
       </AsideDiv>
     </InfoDiv>
   );

@@ -1,5 +1,5 @@
 import light from "../../ressources/light-indus.jpg";
-import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle } from "./styledDiv";
+import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle, AddToBasket } from "./styledDiv";
 
 const Light = () => {
   return (
@@ -9,6 +9,7 @@ const Light = () => {
         <DivTitle> Suspension loft industrielle</DivTitle>
         Avis
         <PriceTitle>99€</PriceTitle>
+        <AddToBasket>Ajouter au panier</AddToBasket>
       </AsideDiv>
     </InfoDiv>
   );
