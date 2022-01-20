@@ -1,5 +1,6 @@
 import Tag from "./Tags";
 import styled from "styled-components";
+import { useState } from "react";
 
 const Shelf = styled.div`
 	position: absolute;
@@ -9,7 +10,7 @@ const Shelf = styled.div`
 const Carpet = styled.div`
 	position: absolute;
 	left: 50%;
-	bottom: .5em;
+	bottom: 0.5em;
 `;
 const Clock = styled.div`
 	position: absolute;
@@ -27,24 +28,37 @@ const Table = styled.div`
 	top: 50%;
 `;
 
-const LivingRoom = () => (
-	<>
-		<Shelf>
-			<Tag />
-		</Shelf>
-        <Carpet>
-            <Tag />
-        </Carpet>
-        <Clock>
-            <Tag />
-        </Clock>
-        <Light>
-            <Tag />
-        </Light>
-        <Table>
-            <Tag />
-        </Table>
-	</>
-);
+const LivingRoom = () => {
+	const [isClicked, setIsClicked] = useState({
+		shelf: false,
+		carpet: false,
+		clock: false,
+		light: false,
+		table: false,
+	});
+	const [tagValue, setTagValue] = useState("");
+	const handleClick = (e) => {
+		setTagValue(e.target.value);
+	};
+	return (
+		<>
+			<Shelf>
+				<Tag value='shelf' onClick={() => setIsClicked({...isClicked, shelf: !isClicked.shelf })} />
+			</Shelf>
+			<Carpet>
+				<Tag onClick={handleClick} />
+			</Carpet>
+			<Clock>
+				<Tag onClick={handleClick} />
+			</Clock>
+			<Light>
+				<Tag onClick={handleClick} />
+			</Light>
+			<Table>
+				<Tag onClick={handleClick} />
+			</Table>
+		</>
+	);
+};
 
 export default LivingRoom;

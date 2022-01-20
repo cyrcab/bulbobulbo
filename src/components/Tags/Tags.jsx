@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 
-const Tag = styled.div`
-    width: 20px;
-    height: 20px;
+const Tag = styled.button`
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
     background: rgba(99, 191, 175, .8);
     border: 3px rgb(99, 191, 175) solid;
