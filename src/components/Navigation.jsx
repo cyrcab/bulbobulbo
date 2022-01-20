@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import logo from '../ressources/logo.png';
+import menu from '../ressources/menu.png';
 import styled from 'styled-components';
 
 const Navigation = () => {
@@ -9,18 +9,16 @@ const Navigation = () => {
     return (
       <Nav>
         <Link to="/">
-          <Logo src={logo} alt="Mano Mano" />
+        <Img src={menu} alt="page accueil" />
         </Link>
-        <Burger onClick={() => setIsOpen(!isOpen)}>
-          <span />
-          <span />
-          <span />
-        </Burger>
-        <Menu isOpen={isOpen}>
-          <Link to="/">
-            <MenuLink>Inspiration</MenuLink>
-          </Link>
-        </Menu>
+        <Menu>
+        <Menu>Solde</Menu>
+        <Link to="/inspiration">
+          <Menu>Inspiration</Menu>
+        </Link>
+        <Menu>Bons plans</Menu>
+        <Menu>Meilleures ventes</Menu>
+      </Menu>
       </Nav>
     );
   };
@@ -34,10 +32,21 @@ const Logo = styled.img`
 const Burger = styled.div`
 `;
 
-const Menu = styled.div`
+const Menu = styled.p`
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  color: #1e3c87;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 600;
 `;
 
 const MenuLink = styled.div`
+`;
+
+const Img = styled.img`
+  width: 100%;
 `;
 
 export default Navigation;

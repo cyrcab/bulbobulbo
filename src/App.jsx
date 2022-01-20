@@ -1,21 +1,21 @@
-import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import PageStyle from './components/pages/Style';
-import PageRoomScandinave from './components/pages/Scandinave';
-import PageRoomIndustrial from './components/pages/Industrial';
-import Navigation from './components/Navigation';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./pages/Home";
+import Inspiration from "./pages/Inspiration";
+import ScandinavianStyle from "./pages/ScandinavianStyle";
+import IndustrialStyle from "./pages/IndustrialStyle";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Routes> 
-            <Route exact path='/' element={<PageStyle />} />
-            <Route path='/scandinavianRoom' element={<PageRoomScandinave />} />
-            <Route path='/industrialRoom' element={<PageRoomIndustrial />} />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/inspiration" element={<Inspiration />} />
+        <Route path="/scandinavianStyle" element={<ScandinavianStyle />} />
+        <Route path="/industrialStyle" element={<IndustrialStyle />} />
       </Routes>
     </div>
-  )
-};
+  );
+}
 
 export default App;

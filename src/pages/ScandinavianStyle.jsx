@@ -1,14 +1,15 @@
 import styled from "styled-components";
+import LivingRoom from "../components/interactiveImg/scandinav/LivingRoom";
+import Kitchen from "../components/interactiveImg/scandinav/Kitchen";
+import Bathroom from "../components/interactiveImg/scandinav/Bathroom";
+import Bedroom from "../components/interactiveImg/scandinav/Bedroom";
+import Garden from "../components/interactiveImg/scandinav/Garden";
+import Navigation from "../components/Navigation";
 
-import Kitchen from "../interactiveImg/industrial/Kitchen";
-import Bathroom from "../interactiveImg/industrial/Bathroom";
-import Bedroom from "../interactiveImg/industrial/Bedroom";
-import Garden from "../interactiveImg/industrial/Garden";
-import LivingRoom from "../interactiveImg/industrial/LivingRoom";
-
-const PageRoomIndustrial = () => {
+const PageRoomScandinave = () => {
     return (
         <MainContainer>
+            <Navigation />
             <Title>Choisissez la pièce de votre projet</Title>
             <CardStyle>
                 <LivingRoom />
@@ -79,6 +80,7 @@ const StyleName = styled.p`
 
 @media (max-width: 768px){
 }
+
 `;
 
-export default PageRoomIndustrial;
+export default PageRoomScandinave;
