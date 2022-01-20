@@ -10,7 +10,6 @@ const PageRoomScandinave = () => {
   return (
     <MainContainer>
       <Navigation />
-      <Title>Choisissez la pièce de votre projet</Title>
       <CardStyle>
         <LivingRoom />
         <StyleName>Salle à manger</StyleName>
@@ -43,8 +42,8 @@ const MainContainer = styled.div`
 `;
 
 const Title = styled.h2`
-font-size : 23px;
-color: #1e3c87;
+  font-size: 23px;
+  color: #1e3c87;
   @media (max-width: 768px) {
   }
 `;
