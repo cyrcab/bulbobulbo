@@ -12,11 +12,15 @@ const PageStyle = () => {
     <>
       <Navigation />
       <MainContainer>
-        <Title>Choisissez le style qui correspond à votre projet</Title>
+        <Title>Vous cherchez l’inspiration ?</Title>
+        <p>Vous êtes au bon endroit. 
+Pour vous, Mano Mano a sélectionné les plus belles idées pour imaginer un intérieur ou un extérieur
+qui vous ressemble !
+</p>
         <Link to="/scandinavianStyle">
+          <StyleName>Scandinave</StyleName>
           <CardStyle>
             <Image src={Scandinave} width="90%" />
-            <StyleName>Scandinave</StyleName>
           </CardStyle>
         </Link>
         <Link to="/industrialStyle">
@@ -51,20 +55,26 @@ const MainContainer = styled.div`
 `;
 
 const Title = styled.h2`
+  font-size: 23px;
+  color: #1e3c87;
+  /* color: #01aead; */
   @media (max-width: 768px) {
   }
 `;
 
 const CardStyle = styled.div`
   @media (max-width: 768px) {
-    background-color: #d8dad8;
+    background-color: #f5f6f7;
     width: 90%;
     font-size: 1.3em;
     font-weight: lighter;
     margin: auto;
-    margin-bottom: 15px;
-    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 8px;
     transition: background-color 2s ease-out;
+    border: 1px solid #ecedf0;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 8%);
 
     &:hover {
       background-color: #00398a; //couleur logo Mano-Mano
@@ -81,6 +91,10 @@ const Image = styled.img`
 `;
 
 const StyleName = styled.p`
+  color: #1e3c87;
+  font-family: Open Sans, mm-main, arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
   @media (max-width: 768px) {
   }
 `;
