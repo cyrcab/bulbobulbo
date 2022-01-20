@@ -4,10 +4,12 @@ import Cuisine from "../ressources/cuisine-scandinave.jpg";
 import SalleDeBain from "../ressources/salle-de-bain-scandinave.jpg";
 import Chambre from "../ressources/chambre-scandinave.jpg";
 import Jardin from "../ressources/jardin-scandinave.jpg";
+import Navigation from "../components/Navigation";
 
 const PageRoomScandinave = () => {
     return (
         <MainContainer>
+            <Navigation />
             <Title>Choisissez la pièce de votre projet</Title>
             <CardStyle>
                 <Image src={Salon} width="90%" />
