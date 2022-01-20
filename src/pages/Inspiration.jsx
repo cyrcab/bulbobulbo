@@ -17,6 +17,22 @@ const PageStyle = () => {
 					Vous êtes au bon endroit. Pour vous, Mano Mano a sélectionné les plus belles idées pour
 					imaginer un intérieur ou un extérieur qui vous ressemble !
 				</p>
+				<Link to='/scandinavianStyle'>
+					<CardStyle>
+						<ImageContainer>
+							<Image src={Scandinave} />
+							<StyleName>Scandinave</StyleName>
+						</ImageContainer>
+					</CardStyle>
+				</Link>
+				<Link to='/industrialStyle'>
+					<CardStyle>
+						<ImageContainer>
+							<Image src={Industriel} />
+							<StyleName>Industriel</StyleName>
+						</ImageContainer>
+					</CardStyle>
+				</Link>
 
 				<Link to='/scandinavianStyle'>
 					<CardStyle>

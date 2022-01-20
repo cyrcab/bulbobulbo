@@ -6,34 +6,31 @@ import Bedroom from "../components/interactiveImg/scandinav/Bedroom";
 import Garden from "../components/interactiveImg/scandinav/Garden";
 import Navigation from "../components/Navigation";
 
-const PageRoomScandinave = () => {
-	return (
-		<MainContainer>
-			<Navigation />
-			<Title>Choisissez la pièce de votre projet</Title>
-			<CardStyle>
-				<LivingRoom />
-				<StyleName>Salle à manger</StyleName>
-			</CardStyle>
-			<CardStyle>
-				<Kitchen />
-				<StyleName>Cuisine</StyleName>
-			</CardStyle>
-			<CardStyle>
-				<Bathroom />
-				<StyleName>Salle de bain</StyleName>
-			</CardStyle>
-			<CardStyle>
-				<Bedroom />
-				<StyleName>Chambre</StyleName>
-			</CardStyle>
-			<CardStyle>
-				<Garden />
-				<StyleName>Jardin</StyleName>
-			</CardStyle>
-		</MainContainer>
-	);
-};
+const PageRoomScandinave = () => (
+	<MainContainer>
+		<Navigation />
+		<CardStyle>
+			<LivingRoom />
+			<StyleName>Salle à manger</StyleName>
+		</CardStyle>
+		<CardStyle>
+			<Kitchen />
+			<StyleName>Cuisine</StyleName>
+		</CardStyle>
+		<CardStyle>
+			<Bathroom />
+			<StyleName>Salle de bain</StyleName>
+		</CardStyle>
+		<CardStyle>
+			<Bedroom />
+			<StyleName>Chambre</StyleName>
+		</CardStyle>
+		<CardStyle>
+			<Garden />
+			<StyleName>Jardin</StyleName>
+		</CardStyle>
+	</MainContainer>
+);
 
 const MainContainer = styled.div`
 	display: flex;
