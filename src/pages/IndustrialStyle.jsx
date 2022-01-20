@@ -1,37 +1,42 @@
 import styled from "styled-components";
+import { IndustrialContextProvider } from "../context/IndustrialContext";
 import Kitchen from "../components/interactiveImg/industrial/Kitchen";
 import Bathroom from "../components/interactiveImg/industrial/Bathroom";
 import Bedroom from "../components/interactiveImg/industrial/Bedroom";
 import Garden from "../components/interactiveImg/industrial/Garden";
 import LivingRoom from "../components/interactiveImg/industrial/LivingRoom";
 import Navigation from "../components/Navigation";
+import DivInfos from "../components/divInfos/InfosContainer";
 
 const PageRoomIndustrial = () => {
   return (
-    <MainContainer>
+    <IndustrialContextProvider>
       <Navigation />
-      <Title>Choisissez la pièce de votre projet</Title>
-      <CardStyle>
-        <LivingRoom />
-        <StyleName>Salle à manger</StyleName>
-      </CardStyle>
-      <CardStyle>
-        <Kitchen />
-        <StyleName>Cuisine</StyleName>
-      </CardStyle>
-      <CardStyle>
-        <Bathroom />
-        <StyleName>Salle de bain</StyleName>
-      </CardStyle>
-      <CardStyle>
-        <Bedroom />
-        <StyleName>Chambre</StyleName>
-      </CardStyle>
-      <CardStyle>
-        <Garden />
-        <StyleName>Jardin</StyleName>
-      </CardStyle>
-    </MainContainer>
+      <MainContainer>
+        <Title>Choisissez</Title>
+        <CardStyle>
+          <LivingRoom />
+          <StyleName>Salle à manger</StyleName>
+        </CardStyle>
+        <DivInfos />
+        <CardStyle>
+          <Kitchen />
+          <StyleName>Cuisine</StyleName>
+        </CardStyle>
+        <CardStyle>
+          <Bathroom />
+          <StyleName>Salle de bain</StyleName>
+        </CardStyle>
+        <CardStyle>
+          <Bedroom />
+          <StyleName>Chambre</StyleName>
+        </CardStyle>
+        <CardStyle>
+          <Garden />
+          <StyleName>Jardin</StyleName>
+        </CardStyle>
+      </MainContainer>
+    </IndustrialContextProvider>
   );
 };
 
@@ -39,12 +44,13 @@ const MainContainer = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 `;
 
 const Title = styled.h2`
   font-size: 23px;
-  color: #01aead;
+  color: #1e3c87;
   @media (max-width: 768px) {
   }
 `;

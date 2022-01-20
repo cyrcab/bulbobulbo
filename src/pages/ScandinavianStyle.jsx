@@ -44,7 +44,7 @@ const MainContainer = styled.div`
 
 const Title = styled.h2`
 font-size : 23px;
-color: #01aead;
+color: #1e3c87;
   @media (max-width: 768px) {
   }
 `;

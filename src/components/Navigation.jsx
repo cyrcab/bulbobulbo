@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Nav>
+    <>
       <Link to="/">
         <Img src={menu} alt="page accueil" />
       </Link>
@@ -19,11 +19,9 @@ const Navigation = () => {
         <Menu>Bons plans</Menu>
         <Menu>Meilleures ventes</Menu>
       </Menu>
-    </Nav>
+    </>
   );
 };
-
-const Nav = styled.nav``;
 
 const Menu = styled.p`
   display: flex;

@@ -1,6 +1,7 @@
 import Tag from "./Tags";
 import styled from "styled-components";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import IndustrialContext from "../../context/IndustrialContext";
 
 const Shelf = styled.div`
 	position: absolute;
@@ -29,33 +30,79 @@ const Table = styled.div`
 `;
 
 const LivingRoom = () => {
-	const [isClicked, setIsClicked] = useState({
-		shelf: false,
-		carpet: false,
-		clock: false,
-		light: false,
-		table: false,
-	});
-	const [tagValue, setTagValue] = useState("");
-	const handleClick = (e) => {
-		setTagValue(e.target.value);
-	};
+	const { isClicked, setIsClicked } = useContext(IndustrialContext);
+
 	return (
 		<>
 			<Shelf>
-				<Tag value='shelf' onClick={() => setIsClicked({...isClicked, shelf: !isClicked.shelf })} />
+				<Tag
+					value='shelf'
+					onClick={() =>
+						setIsClicked({
+							shelf: !isClicked.shelf,
+							carpet: false,
+							clock: false,
+							light: false,
+							table: false,
+						})
+					}
+				/>
 			</Shelf>
 			<Carpet>
-				<Tag onClick={handleClick} />
+				<Tag
+					value='carpet'
+					onClick={() =>
+						setIsClicked({
+							shelf: false,
+							carpet: !isClicked.carpet,
+							clock: false,
+							light: false,
+							table: false,
+						})
+					}
+				/>
 			</Carpet>
 			<Clock>
-				<Tag onClick={handleClick} />
+				<Tag
+					value='clock'
+					onClick={() =>
+						setIsClicked({
+							shelf: false,
+							carpet: false,
+							clock: !isClicked.clock,
+							light: false,
+							table: false,
+						})
+					}
+				/>
 			</Clock>
 			<Light>
-				<Tag onClick={handleClick} />
+				<Tag
+					value='light'
+					onClick={() =>
+						setIsClicked({
+							shelf: false,
+							carpet: false,
+							clock: false,
+							light: !isClicked.light,
+							table: false,
+						})
+					}
+				/>
 			</Light>
 			<Table>
-				<Tag onClick={handleClick} />
+				<Tag
+					value='table'
+					onClick={() =>
+						setIsClicked({
+							shelf: false,
+							carpet: false,
+							clock: false,
+							light: false,
+							table: !isClicked.table,
+						})
+					}
+				/>
 			</Table>
 		</>
 	);
