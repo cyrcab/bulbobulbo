@@ -1,50 +1,50 @@
 import Tag from "./Tags";
 import styled from "styled-components";
 
-const Shelf = styled.div`
+const Toilet = styled.div`
 	position: absolute;
 	left: 2em;
 	bottom: 2.5em;
 `;
-const Carpet = styled.div`
+const Floor = styled.div`
 	position: absolute;
 	left: 50%;
 	bottom: .5em;
 `;
-const Clock = styled.div`
+const Shower = styled.div`
 	position: absolute;
 	right: 2em;
 	top: 2.5em;
 `;
-const Light = styled.div`
+const Mirror = styled.div`
 	position: absolute;
 	right: 50%;
 	top: 2.5em;
 `;
-const Table = styled.div`
+const Cutlery = styled.div`
 	position: absolute;
 	right: 50%;
 	top: 50%;
 `;
 
-const LivingRoom = () => (
+const Bathroom = () => (
 	<>
-		<Shelf>
+		<Toilet>
 			<Tag />
-		</Shelf>
-        <Carpet>
+		</Toilet>
+        <Floor>
             <Tag />
-        </Carpet>
-        <Clock>
+        </Floor>
+        <Shower>
             <Tag />
-        </Clock>
-        <Light>
+        </Shower>
+        <Mirror>
             <Tag />
-        </Light>
-        <Table>
+        </Mirror>
+        <Cutlery>
             <Tag />
-        </Table>
+        </Cutlery>
 	</>
 );
 
-export default LivingRoom;
+export default Bathroom;

@@ -6,5 +6,9 @@ const Image = styled.img`
 		border-radius: 10px;
 	}
 `;
-
+const ImgContainer = styled.div`
+	position: relative;
+`;
 export default Image;
+
+export { ImgContainer };
