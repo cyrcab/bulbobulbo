@@ -16,7 +16,6 @@ const Home = () => {
         <Menu>Bons plans</Menu>
         <Menu>Meilleures ventes</Menu>
       </Menu>
-
       <Img src={solde} alt="page accueil" />
     </>
   );
@@ -31,7 +30,7 @@ const Menu = styled.p`
   justify-content: space-evenly;
   flex-direction: row;
   color: #1e3c87;
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
   font-weight: 600;
 `;
