@@ -1,20 +1,24 @@
 import styled from "styled-components";
+import { IndustrialContextProvider } from "../context/IndustrialContext";
 import Kitchen from "../components/interactiveImg/industrial/Kitchen";
 import Bathroom from "../components/interactiveImg/industrial/Bathroom";
 import Bedroom from "../components/interactiveImg/industrial/Bedroom";
 import Garden from "../components/interactiveImg/industrial/Garden";
 import LivingRoom from "../components/interactiveImg/industrial/LivingRoom";
 import Navigation from "../components/Navigation";
+import DivInfos from "../components/divInfos/InfosContainer";
 
 const PageRoomIndustrial = () => {
 	return (
-		<MainContainer>
-			<Navigation />
+		<IndustrialContextProvider>
+			<MainContainer>
+				<Navigation />
 				<Title>Choisissez la pièce de votre projet</Title>
 				<CardStyle>
 					<LivingRoom />
 					<StyleName>Salle à manger</StyleName>
 				</CardStyle>
+				<DivInfos />
 				<CardStyle>
 					<Kitchen />
 					<StyleName>Cuisine</StyleName>
@@ -31,7 +35,8 @@ const PageRoomIndustrial = () => {
 					<Garden />
 					<StyleName>Jardin</StyleName>
 				</CardStyle>
-		</MainContainer>
+			</MainContainer>
+		</IndustrialContextProvider>
 	);
 };
 
@@ -39,6 +44,7 @@ const MainContainer = styled.div`
 	@media (max-width: 768px) {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 	}
 `;
 
@@ -64,7 +70,6 @@ const CardStyle = styled.div`
 		}
 	}
 `;
-
 
 const StyleName = styled.p`
 	@media (max-width: 768px) {
