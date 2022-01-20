@@ -58,7 +58,6 @@ const CardStyle = styled.div`
     margin-bottom: 15px;
     border-radius: 10px;
     transition: background-color 2s ease-out;
-    cursor: pointer;
 
     &:hover{
         background-color: #00398A; //couleur logo Mano-Mano
