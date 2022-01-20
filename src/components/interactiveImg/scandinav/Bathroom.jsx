@@ -1,0 +1,11 @@
+import SalleDeBain from "../../../ressources/salle-de-bain-scandinave.jpg";
+import Image from "../../styled-components";
+
+const Bathroom = () => (
+    <>
+        <Image src={SalleDeBain} width='90%' />;
+    </>
+);
+
+export default Bathroom;
+
