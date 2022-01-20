@@ -1,7 +1,15 @@
-import clock from "../../ressources/horloge-indus.jpg";
-import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle } from "./styledDiv";
 import CarouselSlider from "react-carousel-slider";
-import styled from "styled-components";
+import clock from "../../ressources/horloge-indus.jpg";
+import stars from "../../ressources/stars.png";
+import InfoDiv, {
+	Img,
+	AsideDiv,
+	DivTitle,
+	PriceTitle,
+	AddToBasket,
+	OpinionDiv,
+	OpinionImg,
+} from "./styledDiv";
 
 let data = [
   {
@@ -58,20 +66,22 @@ let manner = {
   // autoSliding: {interval: "4s"}
   //, duration: "0.3s"
 };
+const Clock = () => (
+  <>
 
-const Clock = () => {
-  return (
-    <>
-      <InfoDiv>
-        <Img src={clock} />
-        <AsideDiv>
-          <DivTitle> Horloge murale vintage industriel</DivTitle>
-          <h3>Avis</h3>
-          <Svg src="src/ressources/ratings.svg" alt="ratings" />
-          <PriceTitle>68€99</PriceTitle>
-        </AsideDiv>
-      </InfoDiv>
-      <CarouselSlider
+		<InfoDiv>
+			<Img src={clock} />
+			<AsideDiv>
+				<DivTitle> Horloge murale vintage industriel</DivTitle>
+				<OpinionDiv>
+					<OpinionImg src={stars} />
+					80 Avis
+				</OpinionDiv>
+				<PriceTitle>68€99</PriceTitle>
+				<AddToBasket>Ajouter au panier</AddToBasket>
+			</AsideDiv>
+		</InfoDiv>
+    <CarouselSlider
         slideItems={data}
         manner={manner}
         buttonSetting={buttonSetting}
@@ -79,12 +89,8 @@ const Clock = () => {
         itemsStyle={itemsStyle}
         textBoxStyle={textBoxStyle}
       />
-    </>
-  );
-};
+  </>
+	);
 
-const Svg = styled.img`
-  width: 185px;
-`;
 
 export default Clock;
