@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Salon from "../ressources/salle-a-manger-scandinave.jpg";
-import Cuisine from "../ressources/cuisine-scandinave.jpg";
-import SalleDeBain from "../ressources/salle-de-bain-scandinave.jpg";
-import Chambre from "../ressources/chambre-scandinave.jpg";
-import Jardin from "../ressources/jardin-scandinave.jpg";
+import LivingRoom from "../components/interactiveImg/scandinav/LivingRoom";
+import Kitchen from "../components/interactiveImg/scandinav/Kitchen";
+import Bathroom from "../components/interactiveImg/scandinav/Bathroom";
+import Bedroom from "../components/interactiveImg/scandinav/Bedroom";
+import Garden from "../components/interactiveImg/scandinav/Garden";
 import Navigation from "../components/Navigation";
 
 const PageRoomScandinave = () => {
@@ -12,23 +12,23 @@ const PageRoomScandinave = () => {
             <Navigation />
             <Title>Choisissez la pièce de votre projet</Title>
             <CardStyle>
-                <Image src={Salon} width="90%" />
+                <LivingRoom />
                 <StyleName>Salle à manger</StyleName>
             </CardStyle>
             <CardStyle>
-                <Image src={Cuisine} width="90%" />
+                <Kitchen />
                 <StyleName>Cuisine</StyleName>
             </CardStyle>
             <CardStyle>
-                <Image src={SalleDeBain} width="90%" />
+                <Bathroom />
                 <StyleName>Salle de bain</StyleName>
             </CardStyle>
             <CardStyle>
-                <Image src={Chambre} width="90%" />
+                <Bedroom />
                 <StyleName>Chambre</StyleName>
             </CardStyle>
             <CardStyle>
-                <Image src={Jardin} width="90%" />
+                <Garden />
                 <StyleName>Jardin</StyleName>
             </CardStyle>
         </ MainContainer>

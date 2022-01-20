@@ -1,83 +1,74 @@
 import styled from "styled-components";
-import Salon from "../ressources/style-industriel.jpg";
-import Cuisine from "../ressources/cuisine-industrielle.jpeg";
-import SalleDeBain from "../ressources/salle-de-bain-industrielle.jpg";
-import Chambre from "../ressources/chambre-industrielle.jpg";
-import Jardin from "../ressources/jardin-industriel.jpg";
+import Kitchen from "../components/interactiveImg/industrial/Kitchen";
+import Bathroom from "../components/interactiveImg/industrial/Bathroom";
+import Bedroom from "../components/interactiveImg/industrial/Bedroom";
+import Garden from "../components/interactiveImg/industrial/Garden";
+import LivingRoom from "../components/interactiveImg/industrial/LivingRoom";
+import Navigation from "../components/Navigation";
 
 const PageRoomIndustrial = () => {
-    return (
-        <MainContainer>
-            <Title>Choisissez la pièce de votre projet</Title>
-            <CardStyle>
-                <Image src={Salon} width="90%" />
-                <StyleName>Salle à manger</StyleName>
-            </CardStyle>
-            <CardStyle>
-                <Image src={Cuisine} width="90%" />
-                <StyleName>Cuisine</StyleName>
-            </CardStyle>
-            <CardStyle>
-                <Image src={SalleDeBain} width="90%" />
-                <StyleName>Salle de bain</StyleName>
-            </CardStyle>
-            <CardStyle>
-                <Image src={Chambre} width="90%" />
-                <StyleName>Chambre</StyleName>
-            </CardStyle>
-            <CardStyle>
-                <Image src={Jardin} width="90%" />
-                <StyleName>Jardin</StyleName>
-            </CardStyle>
-        </ MainContainer>
-    );
+	return (
+		<MainContainer>
+			<Navigation />
+				<Title>Choisissez la pièce de votre projet</Title>
+				<CardStyle>
+					<LivingRoom />
+					<StyleName>Salle à manger</StyleName>
+				</CardStyle>
+				<CardStyle>
+					<Kitchen />
+					<StyleName>Cuisine</StyleName>
+				</CardStyle>
+				<CardStyle>
+					<Bathroom />
+					<StyleName>Salle de bain</StyleName>
+				</CardStyle>
+				<CardStyle>
+					<Bedroom />
+					<StyleName>Chambre</StyleName>
+				</CardStyle>
+				<CardStyle>
+					<Garden />
+					<StyleName>Jardin</StyleName>
+				</CardStyle>
+		</MainContainer>
+	);
 };
 
 const MainContainer = styled.div`
-
-@media (max-width: 768px){
-    display: flex;
-    flex-direction: column;
-}
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+	}
 `;
 
 const Title = styled.h2`
-
-@media (max-width: 768px){
-}
+	@media (max-width: 768px) {
+	}
 `;
 
 const CardStyle = styled.div`
+	@media (max-width: 768px) {
+		background-color: #d8dad8;
+		width: 90%;
+		font-size: 1.3em;
+		font-weight: lighter;
+		margin: auto;
+		margin-bottom: 15px;
+		border-radius: 10px;
+		transition: background-color 2s ease-out;
 
-@media (max-width: 768px){
-    background-color: #D8DAD8;
-    width: 90%;
-    font-size: 1.3em;
-    font-weight: lighter;
-    margin: auto;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    transition: background-color 2s ease-out;
-
-    &:hover{
-        background-color: #00398A; //couleur logo Mano-Mano
-        color: white;
-    }
-}
+		&:hover {
+			background-color: #00398a; //couleur logo Mano-Mano
+			color: white;
+		}
+	}
 `;
 
-const Image = styled.img`
-
-@media (max-width: 768px){
-    margin-top: 10px;
-    border-radius: 10px;
-}
-`;
 
 const StyleName = styled.p`
-
-@media (max-width: 768px){
-}
+	@media (max-width: 768px) {
+	}
 `;
 
 export default PageRoomIndustrial;

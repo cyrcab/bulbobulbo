@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Inspiration from "./pages/Inspiration";
 import ScandinavianStyle from "./pages/ScandinavianStyle";
 import IndustrialStyle from "./pages/IndustrialStyle";
-import Navigation from "./components/Navigation";
 
 function App() {
   return (
