@@ -6,7 +6,7 @@ import Bedroom from "../components/interactiveImg/industrial/Bedroom";
 import Garden from "../components/interactiveImg/industrial/Garden";
 import LivingRoom from "../components/interactiveImg/industrial/LivingRoom";
 import Navigation from "../components/Navigation";
-import DivInfos from "../components/Tags/divInfos";
+import DivInfos from "../components/divInfos/InfosContainer";
 
 const PageRoomIndustrial = () => {
 	return (
@@ -44,6 +44,7 @@ const MainContainer = styled.div`
 	@media (max-width: 768px) {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 	}
 `;
 
