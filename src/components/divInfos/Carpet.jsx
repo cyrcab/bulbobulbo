@@ -1,6 +1,7 @@
 import carpet from "../../ressources/carpet_indus.jpeg";
 import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle } from "./styledDiv";
 import CarouselSlider from 'react-carousel-slider';
+import styled from "styled-components";
 
 let data = [
   {
@@ -68,7 +69,8 @@ const Carpet = () => {
         <Img src={carpet} />
         <AsideDiv>
           <DivTitle> Carpet style industriel</DivTitle>
-          Avis
+          <h3>Avis</h3>
+          <Svg src="src/ressources/ratings.svg" alt="ratings" />
           <PriceTitle>123€</PriceTitle>
         </AsideDiv>
       </InfoDiv>
@@ -83,5 +85,8 @@ const Carpet = () => {
     </>
   );
 };
+const Svg = styled.img`
+  width: 185px;
+`;
 
 export default Carpet;

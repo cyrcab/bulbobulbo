@@ -13,7 +13,6 @@ const PageRoomIndustrial = () => {
     <IndustrialContextProvider>
       <Navigation />
       <MainContainer>
-        <Title>Choisissez</Title>
         <CardStyle>
           <LivingRoom />
           <StyleName>Salle à manger</StyleName>

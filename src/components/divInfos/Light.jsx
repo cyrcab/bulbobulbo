@@ -1,6 +1,7 @@
 import light from "../../ressources/light-indus.jpg";
 import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle } from "./styledDiv";
 import CarouselSlider from 'react-carousel-slider';
+import styled from "styled-components";
 
 let data = [
   {
@@ -64,7 +65,8 @@ const Light = () => {
       <Img src={light} />
       <AsideDiv>
         <DivTitle> Suspension loft industrielle</DivTitle>
-        Avis
+        <h3>Avis</h3>
+          <Svg src="src/ressources/ratings.svg" alt="ratings" />
         <PriceTitle>99€</PriceTitle>
       </AsideDiv>
     </InfoDiv><CarouselSlider
@@ -76,5 +78,9 @@ const Light = () => {
         textBoxStyle={textBoxStyle} /></>
   );
 };
+
+const Svg = styled.img`
+  width: 185px;
+`;
 
 export default Light;
