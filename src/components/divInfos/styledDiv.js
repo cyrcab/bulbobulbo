@@ -43,6 +43,17 @@ const AddToBasket = styled.button`
 	margin-top: .5em;
 `;
 
+const OpinionDiv = styled.div`
+	display: flex;
+	width: 78%;
+	justify-content: space-between;
+`;
+
+
+const OpinionImg = styled.img`
+
+`
+
 export default InfoDiv;
 
-export { Img, AsideDiv, DivTitle, PriceTitle, AddToBasket };
+export { Img, AsideDiv, DivTitle, PriceTitle, AddToBasket, OpinionDiv, OpinionImg };

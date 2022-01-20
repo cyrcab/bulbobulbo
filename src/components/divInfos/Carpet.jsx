@@ -1,5 +1,14 @@
 import carpet from "../../ressources/carpet_indus.jpeg";
-import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle, AddToBasket } from "./styledDiv";
+import InfoDiv, {
+	Img,
+	AsideDiv,
+	DivTitle,
+	PriceTitle,
+	AddToBasket,
+	OpinionDiv,
+	OpinionImg,
+} from "./styledDiv";
+import stars from "../../ressources/stars.png";
 
 const Carpet = () => {
 	return (
@@ -7,7 +16,10 @@ const Carpet = () => {
 			<Img src={carpet} />
 			<AsideDiv>
 				<DivTitle> Carpet style industriel</DivTitle>
-				Avis
+				<OpinionDiv>
+					<OpinionImg src={stars} />
+					12 Avis
+				</OpinionDiv>
 				<PriceTitle>123€</PriceTitle>
 				<AddToBasket>Ajouter au panier</AddToBasket>
 			</AsideDiv>
