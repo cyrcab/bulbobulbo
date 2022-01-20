@@ -13,14 +13,15 @@ const PageStyle = () => {
       <Navigation />
       <MainContainer>
         <Title>Vous cherchez l’inspiration ?</Title>
-        <p>Vous êtes au bon endroit. 
-Pour vous, Mano Mano a sélectionné les plus belles idées pour imaginer un intérieur ou un extérieur
-qui vous ressemble !
-</p>
+        <p>
+          Vous êtes au bon endroit. Pour vous, Mano Mano a sélectionné les plus
+          belles idées pour imaginer un intérieur ou un extérieur qui vous
+          ressemble !
+        </p>
         <Link to="/scandinavianStyle">
-          <StyleName>Scandinave</StyleName>
           <CardStyle>
             <Image src={Scandinave} width="90%" />
+            <StyleName>Scandinave</StyleName>
           </CardStyle>
         </Link>
         <Link to="/industrialStyle">

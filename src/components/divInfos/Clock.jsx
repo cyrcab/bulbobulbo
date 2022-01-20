@@ -1,6 +1,7 @@
 import clock from "../../ressources/horloge-indus.jpg";
 import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle } from "./styledDiv";
-import CarouselSlider from 'react-carousel-slider';
+import CarouselSlider from "react-carousel-slider";
+import styled from "styled-components";
 
 let data = [
   {
@@ -60,21 +61,30 @@ let manner = {
 
 const Clock = () => {
   return (
-    <><InfoDiv>
-      <Img src={clock} />
-      <AsideDiv>
-        <DivTitle> Horloge murale vintage industriel</DivTitle>
-        Avis
-        <PriceTitle>68€99</PriceTitle>
-      </AsideDiv>
-    </InfoDiv><CarouselSlider
+    <>
+      <InfoDiv>
+        <Img src={clock} />
+        <AsideDiv>
+          <DivTitle> Horloge murale vintage industriel</DivTitle>
+          <h3>Avis</h3>
+          <Svg src="src/ressources/ratings.svg" alt="ratings" />
+          <PriceTitle>68€99</PriceTitle>
+        </AsideDiv>
+      </InfoDiv>
+      <CarouselSlider
         slideItems={data}
         manner={manner}
         buttonSetting={buttonSetting}
         sliderBoxStyle={sliderBoxStyle}
         itemsStyle={itemsStyle}
-        textBoxStyle={textBoxStyle} /></>
+        textBoxStyle={textBoxStyle}
+      />
+    </>
   );
 };
+
+const Svg = styled.img`
+  width: 185px;
+`;
 
 export default Clock;

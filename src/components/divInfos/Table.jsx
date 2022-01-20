@@ -1,6 +1,7 @@
 import table from "../../ressources/table-indus.jpg";
 import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle } from "./styledDiv";
 import CarouselSlider from 'react-carousel-slider';
+import styled from "styled-components";
 
 let data = [
   {
@@ -64,7 +65,8 @@ const Shelf = () => {
       <Img src={table} />
       <AsideDiv>
         <DivTitle> Table style industriel</DivTitle>
-        Avis
+        <h3>Avis</h3>
+          <Svg src="src/ressources/ratings.svg" alt="ratings" />
         <PriceTitle>169€90</PriceTitle>
       </AsideDiv>
     </InfoDiv><CarouselSlider
@@ -76,5 +78,9 @@ const Shelf = () => {
         textBoxStyle={textBoxStyle} /></>
   );
 };
+
+const Svg = styled.img`
+  width: 185px;
+`;
 
 export default Shelf;
