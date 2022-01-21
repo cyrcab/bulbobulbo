@@ -35,7 +35,6 @@ let data = [
   in prop sliderBoxStyle here because we could 
   not init the height of parent element */
 
-<<<<<<< HEAD
   let sliderBoxStyle = {
     height: "200px",
     //, width: "200px"
@@ -74,47 +73,6 @@ let data = [
     // autoSliding: {interval: "4s"}
     //, duration: "0.3s"
   };
-=======
-let sliderBoxStyle = {
-	height: "200px",
-	//, width: "200px"
-	// , background: "tranparent"
-};
-
-let itemsStyle = {
-	// ,height: "100%", padding: "0px"
-	// , padding: "15px"
-	// , background: "#FFCA28"
-	// , borderRadius: "4px"
-	// , margin: "0px 0px", padding: "0px"
-};
-
-let textBoxStyle = {
-	// textAlign: "left"
-	// ,width:"50%"
-	// , background: "transparent"
-	// , fontSize: "36px"
-	// , fontWeight: 300
-};
-
-let buttonSetting = {
-	// placeOn: "middle-inside"
-	// ,hoverEvent: true,
-	// , style: {
-	//   left: {
-	//     margin: "0px 0px 0px 10px"
-	//   },
-	//   right: {
-	//     margin: "0px 10px 0px 0px"
-	//   }
-	// }
-};
-
-let manner = {
-	// autoSliding: {interval: "4s"}
-	//, duration: "0.3s"
-};
->>>>>>> 863b0bbed8a994036d6aab78868748796e2ccf7a
 
 const Carpet = () => (
 	<>

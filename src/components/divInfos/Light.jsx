@@ -88,5 +88,5 @@ const Light = () => {
         textBoxStyle={textBoxStyle} />
 	</>
 	);
-
+  }
 export default Light;
