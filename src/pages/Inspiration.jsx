@@ -33,25 +33,6 @@ const PageStyle = () => {
 						</ImageContainer>
 					</CardStyle>
 				</Link>
-
-				<Link to='/scandinavianStyle'>
-					<CardStyle>
-						<ImageContainer>
-							<Image src={Scandinave} />
-						</ImageContainer>
-						<StyleName>Scandinave</StyleName>
-					</CardStyle>
-				</Link>
-
-				<Link to='/industrialStyle'>
-					<CardStyle>
-						<ImageContainer>
-							<Image src={Industriel} />
-							<StyleName>Industriel</StyleName>
-						</ImageContainer>
-					</CardStyle>
-				</Link>
-
 				<CardStyle>
 					<ImageContainer>
 						<Image src={Baroque} />
