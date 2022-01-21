@@ -1,6 +1,16 @@
 import table from "../../ressources/table-indus.jpg";
-import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle } from "./styledDiv";
-import CarouselSlider from 'react-carousel-slider';
+import CarouselSlider from "react-carousel-slider";
+
+import InfoDiv, {
+	Img,
+	AsideDiv,
+	DivTitle,
+	PriceTitle,
+	AddToBasket,
+	OpinionDiv,
+	OpinionImg,
+} from "./styledDiv";
+import stars from "../../ressources/stars.png";
 
 let data = [
   {
@@ -19,8 +29,8 @@ let data = [
 
 
 /* Percantage to set height does not work well 
-  in prop sliderBoxStyle here because we could 
-  not init the height of parent element */
+	in prop sliderBoxStyle here because we could 
+	not init the height of parent element */
 
   let sliderBoxStyle = {
     height: "200px",
@@ -61,23 +71,29 @@ let data = [
     //, duration: "0.3s"
   };
 
-const Shelf = () => {
-  return (
-    <><InfoDiv>
-      <Img src={table} />
-      <AsideDiv>
-        <DivTitle> Table style industriel</DivTitle>
-        Avis
-        <PriceTitle>169€90</PriceTitle>
-      </AsideDiv>
-    </InfoDiv><CarouselSlider
-        slideItems={data}
-        manner={manner}
-        buttonSetting={buttonSetting}
-        sliderBoxStyle={sliderBoxStyle}
-        itemsStyle={itemsStyle}
-        textBoxStyle={textBoxStyle} /></>
-  );
-};
+const Shelf = () => (
+	<>
+		<InfoDiv>
+			<Img src={table} />
+			<AsideDiv>
+				<DivTitle> Table style industriel</DivTitle>
+				<OpinionDiv>
+					<OpinionImg src={stars} />
+					45 Avis
+				</OpinionDiv>
+				<PriceTitle>169€90</PriceTitle>
+				<AddToBasket>Ajouter au panier</AddToBasket>
+			</AsideDiv>
+		</InfoDiv>
+		<CarouselSlider
+			slideItems={data}
+			manner={manner}
+			buttonSetting={buttonSetting}
+			sliderBoxStyle={sliderBoxStyle}
+			itemsStyle={itemsStyle}
+			textBoxStyle={textBoxStyle}
+		/>
+	</>
+);
 
 export default Shelf;

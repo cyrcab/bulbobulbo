@@ -1,6 +1,15 @@
 import light from "../../ressources/light-indus.jpg";
-import InfoDiv, { Img, AsideDiv, DivTitle, PriceTitle } from "./styledDiv";
 import CarouselSlider from 'react-carousel-slider';
+import InfoDiv, {
+	Img,
+	AsideDiv,
+	DivTitle,
+	PriceTitle,
+	AddToBasket,
+	OpinionDiv,
+	OpinionImg,
+} from "./styledDiv";
+import stars from "../../ressources/stars.png";
 
 let data = [
   {
@@ -76,8 +85,8 @@ const Light = () => {
         buttonSetting={buttonSetting}
         sliderBoxStyle={sliderBoxStyle}
         itemsStyle={itemsStyle}
-        textBoxStyle={textBoxStyle} /></>
-  );
-};
+        textBoxStyle={textBoxStyle} />
+	</>
+	);
 
 export default Light;

@@ -4,26 +4,31 @@ import { useState, useContext } from "react";
 import IndustrialContext from "../../context/IndustrialContext";
 
 const Shelf = styled.div`
+	background: none;
 	position: absolute;
-	left: 2em;
-	bottom: 2.5em;
+	left: 1.5em;
+	bottom: 5em;
 `;
 const Carpet = styled.div`
+	background: none;
 	position: absolute;
 	left: 50%;
 	bottom: 0.5em;
 `;
 const Clock = styled.div`
+	background: none;
 	position: absolute;
-	right: 2em;
-	top: 2.5em;
+	right: 1em;
+	top: 3em;
 `;
 const Light = styled.div`
+	background: none;
 	position: absolute;
 	right: 50%;
 	top: 2.5em;
 `;
 const Table = styled.div`
+	background: none;
 	position: absolute;
 	right: 50%;
 	top: 50%;
