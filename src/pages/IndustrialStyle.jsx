@@ -15,7 +15,7 @@ const PageRoomIndustrial = () => {
 			<Navigation />
 			<MainContainer>
 				<Header>
-					<TitleHeader>Scandinave</TitleHeader>
+					<TitleHeader>Industriel</TitleHeader>
 				</Header>
 				<CardStyle>
 					<LivingRoom />
