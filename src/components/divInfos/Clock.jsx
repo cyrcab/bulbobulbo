@@ -4,12 +4,15 @@ import CarouselSlider from 'react-carousel-slider';
 
 let data = [
   {
+    des: '48€99',
     imgSrc: "src/ressources/cloc1.jpg",
   },
   {
+    des: '28€99',
     imgSrc: "src/ressources/cloc2.jpg",
   },
   {
+    des: '68€99',
     imgSrc: "src/ressources/cloc3.jpg",
   },
 ];
@@ -21,7 +24,7 @@ let data = [
 let sliderBoxStyle = {
   height: "200px",
   //, width: "200px"
-  // , background: "tranparent"
+  background: "white"
 };
 
 let itemsStyle = {
@@ -33,11 +36,10 @@ let itemsStyle = {
 };
 
 let textBoxStyle = {
-  // textAlign: "left"
-  // ,width:"50%"
-  // , background: "transparent"
-  // , fontSize: "36px"
-  // , fontWeight: 300
+  width: "30%",
+  background: "white",
+  color: "black",
+  fontSize: "20px"
 };
 
 let buttonSetting = {

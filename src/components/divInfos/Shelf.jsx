@@ -4,12 +4,15 @@ import CarouselSlider from 'react-carousel-slider';
 
 let data = [
   {
+    des: "56€99",
     imgSrc: "src/ressources/sh1.jpg",
   },
   {
+    des: "74€99",
     imgSrc: "src/ressources/sh2.jpg",
   },
   {
+    des: "49€99",
     imgSrc: "src/ressources/sh3.jpg",
   },
 ];
